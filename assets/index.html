@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade de fixação 4</title>
+</head>
+<body>
+    <!--Exercício 01-->
+    <script>
+        for (let cont = 1; cont <= 50 ; cont += 2) {        
+            console.log(cont)
+        }
+    </script>
+
+<!--Exercício 02-->
+    <script>
+        let numero = parseFloat(prompt("Digite um numero de 1 a 10: "));
+        
+        let arr = new Array();
+
+        for(let i = 1; i <= 10; i++){
+           arr.push(numero * i);
+        }
+        console.log(arr);
+
+        alert(`Tabuada de ${numero}:
+        ${numero} x 1 = ${arr[0]}
+        ${numero} x 2 = ${arr[1]}
+        ${numero} x 3 = ${arr[2]}
+        ${numero} x 4 = ${arr[3]}
+        ${numero} x 5 = ${arr[4]}
+        ${numero} x 6 = ${arr[5]}
+        ${numero} x 7 = ${arr[6]}
+        ${numero} x 8 = ${arr[7]}
+        ${numero} x 9 = ${arr[8]}
+        ${numero} x 10 = ${arr[9]}`);       
+    </script>
+
+    <!--Exercício 3-->
+    <script>
+        let lista = [];       
+
+        for (let i = 0; i < 5; i++) {  
+            lista.push(parseFloat(prompt("Digite 5 numeros para criar uma lista: ")))
+            console.log(lista);
+        }
+
+        lista.sort()
+        console.log(lista);
+        alert(lista);
+    </script>
+</body>
+</html>
